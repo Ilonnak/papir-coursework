@@ -1,0 +1,15 @@
+﻿<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 320' width='400' height='320'>
+  <rect width='400' height='320' rx='16' fill='#F6EDF0' />
+  <circle cx='200' cy='140' r='96' fill='#FFFFFF' opacity='0.65' />
+  
+                <g transform='translate(200,145) rotate(24)'>
+                  <rect x='-36' y='-70' width='14' height='135' rx='6' fill='#6D2038' />
+                  <polygon points='-36,65 -22,65 -29,82' fill='#292326' />
+                  <rect x='-6' y='-65' width='14' height='130' rx='6' fill='#8C5868' />
+                  <polygon points='-6,65 8,65 1,82' fill='#292326' />
+                  <rect x='24' y='-60' width='14' height='125' rx='6' fill='#B78392' />
+                  <polygon points='24,65 38,65 31,82' fill='#292326' />
+                </g>
+  <text x='200' y='272' text-anchor='middle' font-family='Segoe UI, Arial, sans-serif' font-size='15' font-weight='700' fill='#292326'>Набір ручок · 3 шт.</text>
+  <text x='200' y='294' text-anchor='middle' font-family='Segoe UI, Arial, sans-serif' font-size='11' fill='#6D2038' letter-spacing='1'>ПИСЬМОВЕ ПРИЛАДДЯ</text>
+</svg>

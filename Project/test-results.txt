@@ -1,0 +1,57 @@
+Test run for c:\Users\123\Desktop\3 курс\1 семестр\КУРСОВА РОБОТА\backend.tests\bin\Debug\net8.0\Backend.Tests.dll (.NETCoreApp,Version=v8.0)
+A total of 1 test files matched the specified pattern.
+[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.5.3.1+6b60a9e56a (64-bit .NET 8.0.11)
+[xUnit.net 00:00:00.21]   Discovering: Backend.Tests
+[xUnit.net 00:00:00.31]   Discovered:  Backend.Tests
+[xUnit.net 00:00:00.31]   Starting:    Backend.Tests
+info: Backend.Services.DatabaseInitializer[0]
+      ?? ? ⠫ <?.> ?譮 ॢ?७  ?⮢.
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:5150
+warn: Microsoft.EntityFrameworkCore.Query[10103]
+      The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+warn: Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware[9]
+      A request body size limit could not be applied. This server does not support the IHttpMaxRequestBodySizeFeature.
+warn: Microsoft.AspNetCore.Mvc.Filters.RequestSizeLimitFilter[1]
+      A request body size limit could not be applied. This server does not support the IHttpRequestBodySizeFeature.
+warn: Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware[9]
+      A request body size limit could not be applied. This server does not support the IHttpMaxRequestBodySizeFeature.
+warn: Microsoft.AspNetCore.Mvc.Filters.RequestSizeLimitFilter[1]
+      A request body size limit could not be applied. This server does not support the IHttpRequestBodySizeFeature.
+  Passed 7. Пошук, фільтр за категорією та діапазоном ціни і сортування працюють узгоджено разом [474 ms]
+  Passed 2. Публічна реєстрація ніколи не дозволяє підвищити роль до адміністратора + case-insensitive унікальність email [316 ms]
+  Passed 12A. Перевірка валідації недостатнього залишку перед записом та перевірка сигнатури растрових зображень [769 ms]
+  Passed P1. Детерміновані тести узгодженості кошика та оформлення (перекриття транзакцій: 2 одночасні створення позиції, 2 одночасні збільшення кількості, зміна кількості під час оформлення) [1 s]
+info: Backend.Services.DatabaseInitializer[0]
+      ?? ? ⠫ <?.> ?譮 ॢ?७  ?⮢.
+  Passed 6. Від’ємні ціни, від’ємні залишки, некоректні кількості та каскадне видалення непорожньої категорії відхиляються [354 ms]
+  Passed P6. Повторне наповнення БД (SeedDemoDataIfDevelopmentAsync) зіставляє товари за незмінним SeedKey: перейменування демонстраційного товару та зміна ціни/фото не створюють дублікатів і не перезаписуються [723 ms]
+warn: Microsoft.EntityFrameworkCore.Query[10103]
+      The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+  Passed P3. Конкурентні запити оплати та скасування замовлення: кінцевий стан ніколи не стає одночасно «Скасоване» й «Оплачено» [1 s]
+  Passed P2. Захист залишку від застарілої форми адміністратора: адмін відкрив товар із залишком 5 -> покупець придбав 1 -> адмін зберігає стару форму -> 409 Conflict і залишок залишається 4 [467 ms]
+  Passed 14. Конкуренція двох покупців за останню одиницю товару в реальній PostgreSQL не дає від’ємного залишку [668 ms]
+  Passed 15. Скасування замовлення повертає залишок рівно один раз, зокрема при одночасних запитах [433 ms]
+  Passed 3. Неправильний пароль і прострочений JWT токен відхиляються [287 ms]
+  Passed 12B (P5). Справжня перевірка відкату транзакції після фактичного INSERT замовлення, UPDATE залишків товарів та INSERT order_items [572 ms]
+  Passed 4. Покупець не читає і не змінює кошик та замовлення іншого покупця через прямі запити [449 ms]
+  Passed 5. Неактивний товар недоступний гостю і покупцю також за прямою адресою, а товар без залишку не додається до кошика [321 ms]
+  Passed 1. Гість бачить каталог, але не має доступу до адміністративних даних (401/403) [34 ms]
+[xUnit.net 00:00:16.17]   Finished:    Backend.Tests
+  Passed 8-11, 13, 16-18. Життєвий цикл замовлення, компенсаційні зміни цін, обов’язковий IdempotencyKey (повтор та зміна payload), незмінність історії, узгодженість оплати й скасування [597 ms]
+
+Test Run Successful.
+Total tests: 16
+     Passed: 16
+ Total time: 17,1380 Seconds
+
+================================================================================
+ПІДСУМОК ЗАПУСКУ ІНТЕГРАЦІЙНИХ ТЕСТІВ
+================================================================================
+Команда запуску : dotnet test "c:\Users\123\Desktop\3 курс\1 семестр\КУРСОВА РОБОТА\backend.tests\Backend.Tests.csproj" --no-build --logger "console;verbosity=normal"
+Ізольована БД   : coursework_web_automated_tests
+Дата запуску    : 2026-11-08 20:23:56 +02:00 (2026-11-08T18:23:56Z)
+Успішних (Passed)  : 16
+Невдалих (Failed)  : 0
+Пропущених (Skipped): 0
+Загальна тривалість: 17,1380 с (xUnit execution: 16,17 с)
