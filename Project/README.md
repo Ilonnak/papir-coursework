@@ -500,3 +500,4 @@ npm --prefix .\frontend ci
 
 - [Створення та оновлення бази даних](documentation/database.md).
 - [Структура та функції застосунку](documentation/project.md).
+- [Додаткові перевірки в Microsoft Edge та під навантаженням](documentation/verification.md).
